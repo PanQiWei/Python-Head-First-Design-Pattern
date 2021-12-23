@@ -29,7 +29,7 @@ class PizzaTestDrive:
                 store_id = input(
                     "Please choose a pizza store:\n" +
                     store_ids_str +
-                    "\nyour choice: "
+                    "\nyour choice(<Ctrl+C> & <Enter> to exit simulation): "
                 )
                 if not store_id.isnumeric():
                     store_id = "-1"
@@ -69,6 +69,7 @@ class PizzaTestDrive:
                     os.system("cls")
                     continue
             except KeyboardInterrupt:
+                print("May you have a great day!")
                 break
 
 
